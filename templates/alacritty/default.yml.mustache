@@ -1,4 +1,3 @@
-# TODO(CONTRIB): Test and fix commented lines.
 colors:
   primary:
     background: '#{{background.hex}}'
@@ -21,19 +20,20 @@ colors:
     bar:
       foreground: '#{{background.hex}}'
       background: '#{{primary.p75.hex}}'
-  # hints:
-  #   start:
-  #     foreground: '#{{red.p100.hex}}'
-  #     background: '#{{red.p100.hex}}'
-  #   end:
-  #     foreground: '#{{red.p100.hex}}'
-  #     background: '#{{red.p100.hex}}'
+  hints:
+    start:
+      foreground: '#{{background.hex}}'
+      background: '#{{primary.p100.hex}}'
+    end:
+      foreground: '#{{background.hex}}'
+      background: '#{{primary.p75.hex}}'
   line_indicator:
     foreground: '#{{background.hex}}'
     background: '#{{primary.p75.hex}}'
   selection:
     text: CellForeground
     background: '#{{selection.p25.hex}}'
+  # TODO(CONTRIB): Test and fix commented lines.
   # footer_bar:
   #   background: '#{{red.p75.hex}}'
   #   foreground: '#{{red.p100.hex}}'
