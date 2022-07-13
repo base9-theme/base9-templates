@@ -11,11 +11,11 @@ screenshot: # optional
 platforms:
   - name: Linux
     template: default.yml.mustache
-    destination: ~/.config/alacritty/themes/base9.yml
+    destination: ~/.config/alacritty/base9.yml
     setup_md: | # optional
       Make sure `~/.config/alacritty/alacritty.yml` has the following:
       ```yaml
       import:
-        - '~/.config/alacritty/themes/base9.yml'
+        - '~/.config/alacritty/base9.yml'
       ```
 

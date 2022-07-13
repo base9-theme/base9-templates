@@ -7,19 +7,32 @@ Base9 theme for [Alacritty](https://github.com/alacritty/alacritty).
 Make sure `~/.config/alacritty/alacritty.yml` has the following:
 ```yaml
 import:
-  - '~/.config/alacritty/themes/base9.yml'
+  - '~/.config/alacritty/base9.yml'
 ```
 
 
+Set your Base9 palette code to shell:
 ```bash
-curl https://raw.github.com/builder > base9-builder
+BASE9_PALETTE="282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934"
+```
+
+Generate theme and copy to Alacritty's config:
+```bash
+curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9-builder --output base9-builder
 chmod +x base9-builder
 
-curl https://raw.github.com/alacritty/default.yml.mustache > base9.mustache
+curl -L \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/alacritty/default.yml.mustache \
+--output base9.mustache
 
-BASE9_PALATTE="282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934"
-DESTINATION="~/.config/alacritty/themes/base9.yml"
-base9-builder render $BASE9_PALETTE base9.mustache > $DESTINATION
+DESTINATION=~/.config/alacritty/base9.yml
+./base9-builder render $BASE9_PALETTE base9.mustache > $DESTINATION
+```
+
+Clean up:
+```bash
+rm base9-builder
+rm base9.mustache
 ```
 
 ## Screenshots
