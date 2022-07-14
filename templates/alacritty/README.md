@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/ala
 --output base9.mustache
 
 DESTINATION=~/.config/alacritty/base9.yml
-./base9-builder render $BASE9_PALETTE base9.mustache > $DESTINATION
+./base9-builder render $BASE9_PALETTE base9.mustache $DESTINATION
 ```
 
 Clean up:

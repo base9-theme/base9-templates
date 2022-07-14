@@ -23,16 +23,16 @@ colors:
   hints:
     start:
       foreground: '#{{background.hex}}'
-      background: '#{{primary.p100.hex}}'
+      background: '#{{secondary.p100.hex}}'
     end:
       foreground: '#{{background.hex}}'
-      background: '#{{primary.p75.hex}}'
+      background: '#{{secondary.p75.hex}}'
   line_indicator:
     foreground: '#{{background.hex}}'
     background: '#{{primary.p75.hex}}'
   selection:
-    text: CellForeground
-    background: '#{{selection.p25.hex}}'
+    text: '#{{background.hex}}'
+    background: '#{{selection.p75.hex}}'
   # TODO(CONTRIB): Test and fix commented lines.
   # footer_bar:
   #   background: '#{{red.p75.hex}}'
