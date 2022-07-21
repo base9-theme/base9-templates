@@ -19,10 +19,14 @@ The guide will assume it's a dark theme.
 Try to follow the following design guide because it will make the theme more
 consistent with other Base9 themes.
 
-This only provides a guideline at a high level. For more detailed design guide,
-try to be consistent with the following base9 theme in order of priority:
+If following this guide makes the theme look worse in certain situations,
+submit a PR to change this guide.
+
+If this guide does not describe how you should write certain parts of the theme,
+use your own judgement or reference existing themes.
+
+Here is a list of well supported themes:
 - vscode
-- TODO
 
 ### What color to pick
 
@@ -64,9 +68,8 @@ Use `p75` for a darker shade, such as:
 
 Use `p50` for even less important things that are ok not to be readable.
 
-To highlight a text, try to use background highlight or border.
-If not possible, use `p125` as last resort.
-
+To highlight a text, when methods like background highlight, border, bold
+font are not possible, use `p125` as last resort.
 #### Background highlight
 
 Use `p25` for things requiring some user attention.
@@ -112,6 +115,17 @@ Scroll bar can be think of a special case for inverted element.
 Use `p25` by default.
 
 Use `p50` as brighter variant.
+
+#### Selection
+
+Use `selection.p25` as background by default.
+
+However, if the theme is for something that can select on top of some other
+highlight, use inverted style.
+
+For example, terminal selection should use inverted style, since some terminal
+app already has some highlights. And terminal selection could be selecting the
+highlighted text. TODO(CONTRIB): reword this.
 
 ### How to deal with terminal apps
 
