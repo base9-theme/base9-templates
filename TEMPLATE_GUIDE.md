@@ -1,14 +1,14 @@
 # Template Development Guide
-This guide explains how to make a Base9 for you favorite app from both design
-and development stand point.
+This guide explains how to make a Base9 for you favorite app from both design and development stand point.
 
-In order to be accepted, you should follow this guide as close as possible.
+For now, it only covers simple apps, where to change a theme, you need to generate a theme file and copy it to the apps config.
 
-1. Create a folder under templates/[app-name].
+There are 3 step writing a new template:
+1. Create a folder under templates/{app-name}.
 2. Write mustache file(s) following style guide.
-3. Write `config.yml`, which will be used to generate README.md. Follow
-   `templates/alacritty` as example.
-4. Use `scripts/generate_readme.sh` to generate README.md
+3. Write `config.yml`, which will be used to generate README.md.
+
+Follow `templates/alacritty` as example.
 
 TODO(CONTRIB): Add github action to auto generate readme.
 
@@ -144,4 +144,3 @@ TODO support `primary`, `secondary`, and aboslute color aliases.
 #### Limitted to ANSI 256
 
 base9 does not support ANSI 256 and will not support it in the near future.
-

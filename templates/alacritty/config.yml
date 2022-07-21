@@ -1,5 +1,12 @@
 name: Base9 Alacritty
 key: alacritty # has to be the same as folder name
+
+# possible values: `terminal`, `editor`. Open issue if adding new types.
+type: terminal
+
+# set if the theme only has basic desings and feels half baked
+# beta: true
+
 app:
   name: Alacritty
   link: https://github.com/alacritty/alacritty

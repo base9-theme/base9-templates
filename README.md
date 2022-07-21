@@ -1,12 +1,11 @@
 # Base9 Templates
 
-List of all supported apps for Base9.
+List of all supported apps for Base9:
 
-For now, it only hosts simple apps, and more complicated apps are hosted in
-separate repo. Apps not in this list:
-
-- vscode
-- vim
+- [Alacritty](./templates/alacritty)
+- [vscode](https://github.com/base9-theme/base9-vscode) 
+- [Wezterm](./templates/wezterm)
+- [Vim/Neovim](https://github.com/base9-theme/base9-vim)
 
 ## How to add new template
 
