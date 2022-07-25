@@ -15,7 +15,7 @@ hosting service, such as gist, separate repo, dedicated image hosting website.
 It is required to have a config file named `config.yml` with key meta infos to
 be used by the rest of base9 ecosystem.
 
-Follow [template/alacritty/config.yml](./template/alacritty/config.yml) as an example.
+Follow [templates/alacritty/config.yml](./templates/alacritty/config.yml) as an example.
 
 A readme file will be generated for you based on the config. If you decide to write
 Writing your own readme is discouraged, as generated readme
