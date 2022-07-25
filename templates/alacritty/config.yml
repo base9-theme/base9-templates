@@ -6,9 +6,10 @@ app:
 # `editor`: if the app is a code editor
 # `gui`: if the app is a general desktop app, a desktop environment, or a window manager
 # `library`: if the app is a library.
-# `beta`: if the theme is not super polished and needs contributions.
-tags: 
-  - terminal
+type: terminal
+
+# Uncomment only if the theme is not super polished and needs contributions.
+# beta: true
 
 # Uncomment only if the source of true is in a different place. Omit it for most apps.
 # external: { link: https://github.com/base9-theme/base9-templates/tree/main/templates/alacritty }

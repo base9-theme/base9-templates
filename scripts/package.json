@@ -1,0 +1,8 @@
+{
+    "name": "base9-templates",
+    "dependencies": {
+        "js-yaml": "^4.1.0",
+        "lodash": "^4.17.21",
+        "mustache": "^4.2.0"
+    }
+}

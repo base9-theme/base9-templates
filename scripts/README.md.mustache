@@ -1,8 +1,11 @@
 {{#readme}}
-# Base9 theme for [{{app.name}}]({{app.link}}).
+# Base9 theme for [{{{app.name}}}]({{{app.link}}}).
+{{#beta}}
+It is currently in Beta, so not everything is finished. Contribution welcomed.
+{{/beta}}
 
 {{#external}}
-For more info, go to {{link}}
+For more info, go to {{{link}}}
 {{/external}}
 
 {{#screenshots}}
@@ -10,7 +13,7 @@ For more info, go to {{link}}
 <details>
 <summary>View screenshots</summary>
 {{#list}}
-![screenshot]({{.}})
+![screenshot]({{{.}}})
 {{/list}}
 </details>
 {{/screenshots}}
@@ -34,7 +37,7 @@ curl -L \
 https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/{{template}} \
 --output base9.mustache
 
-DESTINATION={{destination}}
+DESTINATION={{{destination}}}
 ./base9-builder render $BASE9_PALETTE base9.mustache $DESTINATION
 ```
 

@@ -1,9 +1,8 @@
 app:
   name: Vim/NeoVim
   link: https://neovim.io/
-tags: 
-  - editor
-  - beta
+type: editor
+beta: true
 external:
   link: https://github.com/base9-theme/base9-vim
 readme: true

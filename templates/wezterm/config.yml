@@ -1,8 +1,7 @@
 app:
   name: WezTerm
   link: https://wezfurlong.org/wezterm
-tags:
-  - terminal
+type: terminal
 readme:
   installation:
     before_md: |
