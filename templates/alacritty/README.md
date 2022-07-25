@@ -1,5 +1,6 @@
 # Base9 theme for [Alacritty](https://github.com/alacritty/alacritty).
 
+
 ## Screenshots
 <details>
 <summary>View screenshots</summary>

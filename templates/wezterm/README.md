@@ -1,6 +1,7 @@
 # Base9 theme for [WezTerm](https://wezfurlong.org/wezterm).
 
 
+
 ## Installation
 
 Make sure wezterm [config](https://wezfurlong.org/wezterm/config/files.html)
