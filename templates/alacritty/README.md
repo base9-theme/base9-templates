@@ -1,9 +1,13 @@
-# Base9 Alacritty
-Base9 theme for [Alacritty](https://github.com/alacritty/alacritty).
+# Base9 theme for [Alacritty](https://github.com/alacritty/alacritty).
+
+## Screenshots
+<details>
+<summary>View screenshots</summary>
+![screenshot](./screenshots/Screenshot_282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934.png)
+</details>
 
 ## Installation
 
-### Linux
 Make sure `~/.config/alacritty/alacritty.yml` has the following:
 ```yaml
 import:
@@ -35,9 +39,5 @@ rm base9-builder
 rm base9.mustache
 ```
 
-## Screenshots
-282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934
-
-![282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934](./screenshots/Screenshot_282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934.png)
 
 

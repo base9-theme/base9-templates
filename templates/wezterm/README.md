@@ -1,10 +1,10 @@
-# Base9 Wezterm
-Base9 theme for [WezTerm](https://wezfurlong.org/wezterm).
+# Base9 theme for [WezTerm](https://wezfurlong.org/wezterm).
+
 
 ## Installation
 
-### Linux
-Make sure wezterm has color_scheme set to `Base9`:
+Make sure wezterm [config](https://wezfurlong.org/wezterm/config/files.html)
+has color_scheme set to `Base9`:
 ```lua
 return {
   -- ...
@@ -25,7 +25,7 @@ curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9
 chmod +x base9-builder
 
 curl -L \
-https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/wezterm/default.toml.mustache \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/default.toml.mustache \
 --output base9.mustache
 
 DESTINATION=~/.config/wezterm/colors/Base9.toml
@@ -37,5 +37,6 @@ Clean up:
 rm base9-builder
 rm base9.mustache
 ```
+
 
 

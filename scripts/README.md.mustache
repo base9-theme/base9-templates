@@ -1,13 +1,20 @@
-# {{name}}
-Base9 theme for [{{app.name}}]({{app.link}}).
+{{#readme}}
+# Base9 theme for [{{app.name}}]({{app.link}}).
+
+{{#screenshots}}
+## Screenshots
+<details>
+<summary>View screenshots</summary>
+{{#list}}
+![screenshot]({{.}})
+{{/list}}
+</details>
+{{/screenshots}}
 
 ## Installation
+{{#installation}}
 
-{{#platforms}}
-### {{name}}
-{{#setup_md}}
-{{{.}}}
-{{/setup_md}}
+{{{before_md}}}
 
 Set your Base9 palette code to shell:
 ```bash
@@ -20,7 +27,7 @@ curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9
 chmod +x base9-builder
 
 curl -L \
-https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/{{key}}/{{template}} \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/{{template}} \
 --output base9.mustache
 
 DESTINATION={{destination}}
@@ -33,14 +40,7 @@ rm base9-builder
 rm base9.mustache
 ```
 
-{{#screenshot}}
-## Screenshots
-{{#palettes}}
-{{.}}
+{{{after_md}}}
+{{/installation}}
 
-![{{.}}]({{prefix}}{{.}}{{extension}})
-
-{{/palettes}}
-{{/screenshot}}
-{{/platforms}}
-
+{{/readme}}

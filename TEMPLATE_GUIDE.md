@@ -1,42 +1,59 @@
 # Template Development Guide
-This guide explains how to make a Base9 for you favorite app from both design and development stand point.
+This guide covers how to create a base9 template from scratch.
 
-For now, it only covers simple apps, where to change a theme, you need to generate a theme file and copy it to the apps config.
+For most apps, you only need to write two files under `templates/<app-name>`:
+- a config file with key meta infos to be used by the rest of base9 ecosystem.
+- a [mustache](http://mustache.github.io/) file renders to the app's config file
 
-There are 3 step writing a new template:
-1. Create a folder under templates/{app-name}.
-2. Write mustache file(s) following style guide.
-3. Write `config.yml`, which will be used to generate README.md.
+Avoid adding too much extra files into this repo, since this repo could be used
+by automated tools and will cost too much bandwidth otherwise.
+This includes screenshots, executables, etc. Instead, upload them to external
+hosting service, such as gist, separate repo, dedicated image hosting website.
 
-Follow `templates/alacritty` as example.
+## Writing config file for base9
+
+It is required to have a config file named `config.yml` with key meta infos to
+be used by the rest of base9 ecosystem.
+
+Follow [template/alacritty/config.yml](./template/alacritty/config.yml) as an example.
+
+A readme file will be generated for you based on the config. If you decide to write
+Writing your own readme is discouraged, as generated readme
+makes future base9 development been reflected on readme easier.
+But if you do decide to your own readme, make sure the readme section of the config is omitted.
 
 TODO(CONTRIB): Add github action to auto generate readme.
 
-## Style Guide
+## How to write the mustache file
+
+By convension name it `default[.ext].mustache`.
 
 The guide will assume it's a dark theme.
 
-Try to follow the following design guide because it will make the theme more
-consistent with other Base9 themes.
-
+Following this guide will ensure the theme is consistent with the rest of Base9 themes.
 If following this guide makes the theme look worse in certain situations,
 submit a PR to change this guide.
-
 If this guide does not describe how you should write certain parts of the theme,
 use your own judgement or reference existing themes.
 
 Here is a list of well supported themes:
 - vscode
 
+### Data avaiable for mustache render
+
+An example of complete set of data available for mustache render is
+[here](https://jsoneditoronline.org/#left=url.https%3A%2F%2Fgist.githubusercontent.com%2Flijiaqigreat%2F1e0ddc268b35d06610a78156baffb14e%2Fraw%2Ffabafbd042bd77c35168009966c0edbda1096d77%2Fdata.json)
+
+With a few exceptions, most colors can be accessed of the form `<semantic>.<shade>.<format>`.
+
+An incomplete list exceptions worth mentioning:
+- For [ANSI 4 bit](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit), use `ansi.<name>.<format>`.
+- The background color does not have shades, so use `background.<format>`.
+
 ### What color to pick
 
-[This file](https://github.com/base9-theme/base9-builder/blob/main/src/default_config.yml)
-has the list of variables available to use in mustache.
-
-TODO(CONTRIB): explain how this file works.
-
-You should choose a variable that closest to the purpose of where you use
-it.
+You should choose a semantic that closest to the purpose of where you use
+it for.
 
 Generally, most of interactable UI element should be `primary` and most other
 interactable UI elements should be `secondary`.
@@ -127,7 +144,7 @@ For example, terminal selection should use inverted style, since some terminal
 app already has some highlights. And terminal selection could be selecting the
 highlighted text. TODO(CONTRIB): reword this.
 
-### How to deal with terminal apps
+### Special notes for with terminal apps
 
 #### differentiate UI sections
 

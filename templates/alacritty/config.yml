@@ -1,28 +1,33 @@
-name: Base9 Alacritty
-key: alacritty # has to be the same as folder name
-
-# possible values: `terminal`, `editor`. Open issue if adding new types.
-type: terminal
-
-# set if the theme only has basic desings and feels half baked
-# beta: true
-
 app:
   name: Alacritty
   link: https://github.com/alacritty/alacritty
-screenshot: # optional
-  palettes:
-    - "282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934"
-  prefix: "./screenshots/Screenshot_"
-  extension: ".png"
-platforms: # optional
-  - name: Linux
-    template: default.yml.mustache
-    destination: ~/.config/alacritty/base9.yml
-    setup_md: | # optional
+# possible values:
+# `terminal`: if the app is a terminal emulator
+# `editor`: if the app is a code editor
+# `gui`: if the app is a desktop app, a desktop environment, or a window manager
+# `library`: if the app is a library.
+# `beta`: if the theme is not super polished and needs contributions.
+tags: 
+  - terminal
+
+# Uncomment only if the source of true is in a different place. Omit it for most apps.
+# link: https://github.com/base9-theme/base9-templates/tree/main/templates/alacritty
+
+readme: # optional
+  screenshots: # optional
+    list:
+      - "./screenshots/Screenshot_282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934.png"
+  installation:
+    before_md: | # put at the very begining of the installation section
       Make sure `~/.config/alacritty/alacritty.yml` has the following:
       ```yaml
       import:
         - '~/.config/alacritty/base9.yml'
       ```
+    # location of the mustache, relative to the template directory
+    template: alacritty/default.yml.mustache
+    # location to write the rendered mustache to, have to be absolute path.
+    destination: ~/.config/alacritty/base9.yml
+    after_md: "" # put at the very end of the installation section
+  
 
