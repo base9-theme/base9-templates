@@ -1,10 +1,10 @@
 # Base9 theme for [Alacritty](https://github.com/alacritty/alacritty).
 
 
-## Screenshots
 <details>
 <summary>View screenshots</summary>
-![screenshot](https://user-images.githubusercontent.com/2196866/180703789-8fa6c00a-e91f-4e69-ab8e-8d0084da9dd0.png)
+282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934
+<img src="https://user-images.githubusercontent.com/2196866/180703789-8fa6c00a-e91f-4e69-ab8e-8d0084da9dd0.png"/>
 </details>
 
 ## Installation
