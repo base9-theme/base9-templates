@@ -5,8 +5,8 @@ List of all supported apps for Base9:
 <details>
 <summary>Terminals</summary>
 
-- [Alacritty](./templates/terminal) 
-- [WezTerm](./templates/terminal) 
+- [Alacritty](./templates/alacritty) 
+- [WezTerm](./templates/wezterm) 
 </details>
 <details>
 <summary>Code Editors</summary>
@@ -22,7 +22,3 @@ List of all supported apps for Base9:
 <summary>Libraries</summary>
 
 </details>
-
-## How to add new template
-
-[Template Development Guide](./TEMPLATE_GUIDE.md)

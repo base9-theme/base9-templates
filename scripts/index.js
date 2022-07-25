@@ -9,7 +9,6 @@ function readFile(path) {
 const TEMPLATES = "templates";
 const template = readFile("scripts/README.md.mustache");
 
-const configs = [];
 const root_data = {
     tags: [
         {name: "Terminals", key: "terminal", list: [] },
