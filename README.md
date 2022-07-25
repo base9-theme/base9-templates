@@ -6,6 +6,7 @@ List of all supported apps for Base9:
 <summary>Terminals</summary>
 
 - [Alacritty](./templates/alacritty) 
+- [Kitty](./templates/kitty) 
 - [WezTerm](./templates/wezterm) 
 </details>
 <details>
