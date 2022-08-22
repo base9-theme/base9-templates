@@ -2,19 +2,19 @@ app:
   name: WezTerm
   link: https://wezfurlong.org/wezterm
 type: terminal
-readme:
-  installation:
-    before_md: |
-      Make sure wezterm [config](https://wezfurlong.org/wezterm/config/files.html)
-      has color_scheme set to `Base9`:
-      ```lua
-      return {
-        -- ...
-        color_scheme: 'Base9',
-        -- ...
-      }
-      ```
-    template: default.toml.mustache
-    destination: ~/.config/wezterm/colors/Base9.toml
-    after_md: ""
+installation:
+- writeTemplate: true
+  template: default.toml.mustache
+  destination: ~/.config/wezterm/colors/Base9.toml
+  before_md: |
+    Make sure wezterm [config](https://wezfurlong.org/wezterm/config/files.html)
+    has color_scheme set to `Base9`:
+    ```lua
+    return {
+      -- ...
+      color_scheme: 'Base9',
+      -- ...
+    }
+    ```
+  after_md: ""
 

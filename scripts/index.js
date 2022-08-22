@@ -2,6 +2,16 @@ const mustache = require('mustache');
 const yaml = require('js-yaml');
 const _ = require('lodash');
 const fs = require('fs');
+const Ajv = require('ajv/dist/2019');
+
+const ajv = new Ajv();
+const schema = yaml.load(readFile("scripts/schema.yml"));
+const validate = ajv.compile(schema);
+const tmp = yaml.load(readFile("templates/alacritty/config.yml"));
+const valid = validate(tmp)
+if (!valid) console.log(validate.errors)
+// process.exit(0);
+
 
 function readFile(path) {
     return fs.readFileSync(path, {encoding:'utf8', flag:'r'});
@@ -20,9 +30,17 @@ const root_data = {
 
 for(let app of fs.readdirSync("templates")) {
     const config = yaml.load(readFile(TEMPLATES + "/" + app + "/config.yml"));
+    if(!validate(config)) {
+        console.log(app)
+        console.log(validate.errors)
+        continue;
+    }
     config.app.key = app;
+
+    // update root_data
     let tag_line = root_data.tags.find(x => x.key === config.type);
     tag_line.list.push(config);
+
     const readme = mustache.render(template, config);
     if(readme.length > 1) {
         fs.writeFileSync(TEMPLATES + "/" + app + "/README.md", readme);

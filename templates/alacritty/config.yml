@@ -1,35 +1,19 @@
 app:
   name: Alacritty
   link: https://github.com/alacritty/alacritty
-# possible values:
-# `terminal`: if the app is a terminal emulator
-# `editor`: if the app is a code editor
-# `gui`: if the app is a general desktop app, a desktop environment, or a window manager
-# `library`: if the app is a library.
 type: terminal
+screenshots: # optional
+- title: "282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934"
+  link: "https://user-images.githubusercontent.com/2196866/180703789-8fa6c00a-e91f-4e69-ab8e-8d0084da9dd0.png"
+installation:
+- writeTemplate: true
+  template: alacritty/default.yml.mustache
+  destination: ~/.config/alacritty/base9.yml
 
-# Uncomment only if the theme is not super polished and needs contributions.
-# beta: true
-
-# Uncomment only if the source of true is in a different place. Omit it for most apps.
-# external: { link: https://github.com/base9-theme/base9-templates/tree/main/templates/alacritty }
-
-readme: # optional
-  screenshots: # optional
-    list:
-      - title: "282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934"
-        link: "https://user-images.githubusercontent.com/2196866/180703789-8fa6c00a-e91f-4e69-ab8e-8d0084da9dd0.png"
-  installation:
-    before_md: | # put at the very begining of the installation section
-      Make sure `~/.config/alacritty/alacritty.yml` has the following:
-      ```yaml
-      import:
-        - '~/.config/alacritty/base9.yml'
-      ```
-    # location of the mustache, relative to the template directory
-    template: alacritty/default.yml.mustache
-    # location to write the rendered mustache to, have to be absolute path.
-    destination: ~/.config/alacritty/base9.yml
-    after_md: "" # put at the very end of the installation section
-  
-
+  before_md: | # put at the very begining of the installation section
+    Make sure `~/.config/alacritty/alacritty.yml` has the following:
+    ```yaml
+    import:
+      - '~/.config/alacritty/base9.yml'
+    ```
+  after_md: "" # put at the very end of the installation section

@@ -1,8 +1,12 @@
 # Base9 theme for [WezTerm](https://wezfurlong.org/wezterm).
 
 
+<details style="display: none;">
+<summary>View screenshots</summary>
+</details>
 
 ## Installation
+
 
 Make sure wezterm [config](https://wezfurlong.org/wezterm/config/files.html)
 has color_scheme set to `Base9`:
@@ -38,6 +42,5 @@ Clean up:
 rm base9-builder
 rm base9.mustache
 ```
-
 
 

@@ -1,13 +1,14 @@
 # Base9 theme for [Kitty](https://sw.kovidgoyal.net/kitty/).
 
 
-<details>
+<details >
 <summary>View screenshots</summary>
 282828-ebdbb2-83a598-8ec07c-fe8019-fabd2f-b8bb26-d3869b-fb4934
 <img src="https://user-images.githubusercontent.com/2196866/180879121-6bdb8bda-07f9-4041-a36c-e30e23fd0a8c.png"/>
 </details>
 
 ## Installation
+
 
 Make sure `~/.config/kitty/kitty.conf` has the following:
 ```
@@ -38,6 +39,5 @@ Clean up:
 rm base9-builder
 rm base9.mustache
 ```
-
 
 
