@@ -6,7 +6,7 @@ beta: true
 external:
   link: https://github.com/base9-theme/base9-vim
 installation:
-- copyPalette: true
+- copy_palette: true
   before_md: |
     Install https://github.com/base9-theme/base9-vim
     using your favorite plugin manager

@@ -71,15 +71,15 @@ properties:
           type: string
           description: put at the very end of the installation section
       oneOf:
-      - required: [copyPalette]
+      - required: [copy_palette]
         properties:
-          copyPalette:
+          copy_palette:
             const: true
             description: true if install requires copying palette to somewhere
         
-      - required: [writeTemplate, template, destination]
+      - required: [write_template, template, destination]
         properties:
-          writeTemplate:
+          write_template:
             const: true
             description: true if install requires writing generated template to some file
           template:
@@ -90,9 +90,9 @@ properties:
             type: string
             description: path of the file to write template to
             examples: [~/.config/alacritty/base9.yml]
-      - required: [copyTemplate, template]
+      - required: [copy_template, template]
         properties:
-          copyTemplate:
+          copy_template:
             const: true
             description: true if install requires copying generated template to somewhere
           template:

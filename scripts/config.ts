@@ -53,14 +53,14 @@ export interface Config {
           /**
            * true if install requires copying palette to somewhere
            */
-          copyPalette: true;
+          copy_palette: true;
           [k: string]: unknown;
         }
       | {
           /**
            * true if install requires writing generated template to some file
            */
-          writeTemplate: true;
+          write_template: true;
           /**
            * path relative to the template folder
            */
@@ -75,7 +75,7 @@ export interface Config {
           /**
            * true if install requires copying generated template to somewhere
            */
-          copyTemplate: true;
+          copy_template: true;
           /**
            * path relative to the template folder
            */
@@ -88,14 +88,14 @@ export interface Config {
           /**
            * true if install requires copying palette to somewhere
            */
-          copyPalette: true;
+          copy_palette: true;
           [k: string]: unknown;
         }
       | {
           /**
            * true if install requires writing generated template to some file
            */
-          writeTemplate: true;
+          write_template: true;
           /**
            * path relative to the template folder
            */
@@ -110,7 +110,7 @@ export interface Config {
           /**
            * true if install requires copying generated template to somewhere
            */
-          copyTemplate: true;
+          copy_template: true;
           /**
            * path relative to the template folder
            */

@@ -9,7 +9,7 @@
   const schemaYml = yaml.load(readFile("scripts/schema.yml"));
   const validate = ajv.compile(schemaYml);
   await compile(schemaYml, 'Config')
-    .then(ts => fs.writeFileSync('scripts/config.d.ts', ts))
+    .then(ts => fs.writeFileSync('scripts/config.ts', ts))
 
 
   function readFile(path) {
