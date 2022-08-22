@@ -11,6 +11,8 @@ For more info, go to https://github.com/base9-theme/base9-vscode
 
 Install [base9-vscode](https://marketplace.visualstudio.com/items?itemName=base9-theme.base9-vscode)
 
+Set color theme to `base9`
 
 
-Go to `base9.palette` setting and paste the palette.
+
+Set palette in setting `base9.palette`.
