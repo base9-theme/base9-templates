@@ -15,17 +15,19 @@ hosting service, such as gist, separate repo, dedicated image hosting website.
 It is required to have a config file named `config.yml` with key meta infos to
 be used by the rest of base9 ecosystem.
 
-Follow [templates/alacritty/config.yml](./templates/alacritty/config.yml) as an example.
+It follows [json schema](https://json-schema.org/) at [`scripts/schema.yml`](./scripts/schema.yml).
 
-A readme file will be generated for you based on the config. If you decide to write
-Writing your own readme is discouraged, as generated readme
-makes future base9 development been reflected on readme easier.
-But if you do decide to your own readme, make sure the readme section of the config is omitted.
+You can also reference existing config files for other apps in `templates/<app-name>/config.yml`.
+
+DO NOT write your own `README.md`. Instead, it will be generated based on the config.
+It makes future base9 development been reflected on readme easier.
+Raise issue if the template does not fit your need.
 
 TODO(CONTRIB): Add github action to auto generate readme.
 
 ## How to write the mustache file
 
+The file name must end with `.mustache`.
 By convension name it `default[.ext].mustache`.
 
 The guide will assume it's a dark theme.
@@ -42,7 +44,7 @@ Here is a list of well supported themes:
 ### Data avaiable for mustache render
 
 An example of complete set of data available for mustache render is
-[here](https://jsoneditoronline.org/#left=url.https%3A%2F%2Fgist.githubusercontent.com%2Flijiaqigreat%2F1e0ddc268b35d06610a78156baffb14e%2Fraw%2Ffabafbd042bd77c35168009966c0edbda1096d77%2Fdata.json)
+[here](https://jsoneditoronline.org/#left=url.https%3A%2F%2Fgist.githubusercontent.com%2Flijiaqigreat%2F1e0ddc268b35d06610a78156baffb14e%2Fraw%2Ffabafbd042bd77c35168009966c0edbda1096d77%2Fdata.json).
 
 With a few exceptions, most colors can be accessed of the form `<semantic>.<shade>.<format>`.
 

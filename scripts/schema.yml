@@ -85,6 +85,7 @@ properties:
           template:
             type: string
             description: path relative to the template folder
+            examples: [alacritty/default.yml.mustache]
           destination:
             type: string
             description: path of the file to write template to
@@ -97,3 +98,4 @@ properties:
           template:
             type: string
             description: path relative to the template folder
+            examples: [alacritty/default.yml.mustache]
