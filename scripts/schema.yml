@@ -66,10 +66,16 @@ properties:
           maxLength: 40
         before_md:
           type: string
-          description: put at the very begining of the installation section
+          description: >
+            Markdown put at the begining of the installation section.
+            Use `111111-222222-333333-444444-555555-666666-777777-888888-999999` for example template,
+            as it could be replaced by actual palette when apropriate.
         after_md:
           type: string
-          description: put at the very end of the installation section
+          description: >
+            Markdown put at the end of the installation section.
+            Use `111111-222222-333333-444444-555555-666666-777777-888888-999999` for example template,
+            as it could be replaced by actual palette when apropriate.
       oneOf:
       - required: [copy_palette]
         properties:
