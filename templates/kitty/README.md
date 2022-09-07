@@ -27,7 +27,7 @@ curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9
 chmod +x base9-builder
 
 curl -L \
-https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/kitty&#x2F;default.conf.mustache \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/kitty/default.conf.mustache \
 --output base9.mustache
 
 DESTINATION=~/.config/kitty/base9.yml

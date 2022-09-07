@@ -27,7 +27,8 @@ export interface Config {
    * `library`: if the app is a library.
    *
    */
-  type: string;
+  type: "terminal" | "editor" | "gui" | "library";
+  description?: string;
   external?: {
     /**
      * link to the actual template repo

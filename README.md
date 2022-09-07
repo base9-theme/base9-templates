@@ -8,6 +8,7 @@ List of all supported apps for Base9:
 - [Alacritty](./templates/alacritty) 
 - [Kitty](./templates/kitty) 
 - [WezTerm](./templates/wezterm) 
+- [xfce4-terminal](./templates/xfce4-terminal) 
 </details>
 <details>
 <summary>Code Editors</summary>
@@ -22,4 +23,6 @@ List of all supported apps for Base9:
 <details>
 <summary>Libraries</summary>
 
+- [CSS](./templates/css) 
+- [highlight.js](./templates/highlighjs) 
 </details>

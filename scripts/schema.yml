@@ -15,17 +15,18 @@ properties:
       link:
         type: string
         # format: uri
-        examples:
-        - https://github.com/alacritty/alacritty
+        examples: [https://github.com/alacritty/alacritty]
         description: official link of the app
   type:
     type: string
-    pattern: (terminal)|(editor)|(gui)|(library)
+    enum: [terminal,editor,gui,library]
     description: |
       `terminal`: if the app is a terminal emulator
       `editor`: if the app is a code editor
       `gui`: if the app is a general desktop app, a desktop environment, or a window manager
       `library`: if the app is a library.
+  description:
+    type: string
   external:
     type: object
     required: [link]

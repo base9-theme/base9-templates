@@ -129,7 +129,7 @@ Use `background` as the text color.
 
 #### Scroll bar
 
-Scroll bar can be think of a special case for inverted element.
+Scroll bar can be think of a special case for *inverted* element.
 
 Use `p25` by default.
 
@@ -137,28 +137,33 @@ Use `p50` as brighter variant.
 
 #### Selection
 
+There are three types of recommende selection style for different scenarios:
+
 Use `selection.p25` as background by default.
 
-However, if the theme is for something that can select on top of some other
-highlight, use inverted style.
+If the theme is for something that can select on top of some other
+highlight, reverse background and foreground for selected section if the app supports it.
+For example, terminal selection should use *inverted style*, since apps running inside
+the terminal, such as vim, may already have some highlighted selection.
 
-For example, terminal selection should use inverted style, since some terminal
-app already has some highlights. And terminal selection could be selecting the
-highlighted text. TODO(CONTRIB): reword this.
+If reversing background and foreground is not possible, use *inverted style*:
+`selection.p75` as background and `background` as foreground.
 
-### Special notes for with terminal apps
+TODO(CONTRIB): reword this.
+
+### Special notes about terminal apps
 
 #### differentiate UI sections
 
 Sometimes we need to differentiate UI sections,
-but border is not possible/ideal. In that case, use either inverted element
+but border is not possible/ideal. In that case, use either *inverted style*
 or `p25` as background.
 
 #### Limitted to ANSI 16
 
 Use `ansi.*` only.
 
-TODO support `primary`, `secondary`, and aboslute color aliases.
+TODO: support `primary`, `secondary`, and aboslute color aliases.
 
 #### Limitted to ANSI 256
 

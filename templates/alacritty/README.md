@@ -28,7 +28,7 @@ curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9
 chmod +x base9-builder
 
 curl -L \
-https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/alacritty&#x2F;default.yml.mustache \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/alacritty/default.yml.mustache \
 --output base9.mustache
 
 DESTINATION=~/.config/alacritty/base9.yml

@@ -2,7 +2,7 @@
 {{#beta}}
 It is currently in Beta, so not everything is finished. Contribution welcomed.
 {{/beta}}
-
+{{{description}}}
 {{#external}}
 For more info, go to {{{link}}}
 {{/external}}
@@ -33,7 +33,7 @@ curl -L https://github.com/base9-theme/base9-builder/releases/download/0.1/base9
 chmod +x base9-builder
 
 curl -L \
-https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/{{template}} \
+https://raw.githubusercontent.com/base9-theme/base9-templates/main/templates/{{{template}}} \
 --output base9.mustache
 
 DESTINATION={{{destination}}}
